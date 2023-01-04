@@ -20325,15 +20325,20 @@ var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var Contact = function Contact(props) {
+var Contact = function Contact(_ref) {
+  var img = _ref.img,
+      name = _ref.name,
+      phone = _ref.phone,
+      email = _ref.email;
+
   return _react2.default.createElement(
     "div",
     { className: "contact-card" },
-    _react2.default.createElement("img", { src: props.img }),
+    _react2.default.createElement("img", { src: img }),
     _react2.default.createElement(
       "h3",
       null,
-      props.name
+      name
     ),
     _react2.default.createElement(
       "div",
@@ -20342,7 +20347,7 @@ var Contact = function Contact(props) {
       _react2.default.createElement(
         "p",
         null,
-        props.phone
+        phone
       )
     ),
     _react2.default.createElement(
@@ -20352,7 +20357,7 @@ var Contact = function Contact(props) {
       _react2.default.createElement(
         "p",
         null,
-        props.email
+        email
       )
     )
   );
